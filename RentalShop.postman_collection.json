@@ -1,0 +1,104 @@
+{
+    "info": {
+      "name": "RentalShop",
+      "_postman_id": "23456789-abcd-2345-abcd-23456789abcd",
+      "description": "Collection of API requests for RentalShop",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get All Rental Shops",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/api/rentalshops",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["api", "rentalshops"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Rental Shop by ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/api/rentalshops/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["api", "rentalshops", "1"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create Rental Shop",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"id\":1,\"name\":\"Rental Shop 1\",\"cityId\":\"C1\"}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/api/rentalshops",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["api", "rentalshops"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Update Rental Shop",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\":\"Updated Rental Shop\",\"cityId\":\"C1\"}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/api/rentalshops/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["api", "rentalshops", "1"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Delete Rental Shop",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/api/rentalshops/1",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8080",
+            "path": ["api", "rentalshops", "1"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
